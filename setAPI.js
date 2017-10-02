@@ -1,3 +1,6 @@
+var intersection = require('./intersection');
+var union = require('./union');
+
 function compareSets(a, b) {
     if (a.length === 0) {
         if (b.length === 0) {
@@ -40,35 +43,8 @@ function compareSets(a, b) {
     return -2; // sets
 }
 
-function union(a, b) {
-    return _arrayUnique(a.concat(b));
-}
-
-Array.prototype.union = function(b) {
-    return _arrayUnique(this.concat(b));
-}
-
-function _arrayUnique(array) {
-    var a = array.concat();
-    for(var i = 0; i < a.length; ++i) {
-        for(var j = i + 1; j < a.length; ++j) {
-            if(a[i] === a[j])
-                a.splice(j--, 1);
-        }
-    }
-
-    return a;
-}
-
-function intersection(a, b) {
- // implement logic
-}
-
-Array.prototype.intersection = function(b) {
- // implement logic
-}
-
 module.exports = {
     compareSets: compareSets,
-    union: union
+    union: union,
+    intersection: intersection
 };

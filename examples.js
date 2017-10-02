@@ -25,6 +25,6 @@ console.log("2. setB.intersection(setC) => ", setB.intersection(setC)); // [ 3, 
 console.log("-----------------");
 
 console.log("Difference:");
-console.log("1. API.difference(setA, setB) => ", API.difference(setA, setB)); // [ 2, 3, 4 ]
-console.log("2. setB.difference(setC) => ", setB.difference(setC)); // [ 3, 4 ]
+console.log("1. API.difference(setA, setB) => ", API.difference(setA, setB)); // [ 1, 5 ]
+console.log("2. setB.difference(setC) => ", setB.difference(setC)); // [ 2 ]
 console.log("-----------------");

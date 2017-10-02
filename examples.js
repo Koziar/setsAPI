@@ -28,3 +28,8 @@ console.log("Difference:");
 console.log("1. API.difference(setA, setB) => ", API.difference(setA, setB)); // [ 1, 5 ]
 console.log("2. setB.difference(setC) => ", setB.difference(setC)); // [ 2 ]
 console.log("-----------------");
+
+console.log("Membership:");
+console.log("1. API.Membership(setA, setB) => ", API.membership(setA, setB)); // [ 1, 5 ]
+console.log("2. setB.membership(setC) => ", setB.membership(setC)); // [ 2 ]
+console.log("-----------------");

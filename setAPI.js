@@ -1,6 +1,7 @@
 var intersection = require('./intersection');
 var union = require('./union');
 var difference = require('./difference');
+var membership = require('./membership');
 
 function compareSets(a, b) {
     if (a.length === 0) {
@@ -48,5 +49,6 @@ module.exports = {
     compareSets: compareSets,
     union: union,
     intersection: intersection,
-    difference: difference
+    difference: difference,
+    membership: membership
 };

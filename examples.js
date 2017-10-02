@@ -30,6 +30,11 @@ console.log("2. setB.difference(setC) => ", setB.difference(setC)); // [ 2 ]
 console.log("-----------------");
 
 console.log("Membership:");
-console.log("1. API.Membership(setA, setB) => ", API.membership(setA, setB)); // [ 1, 5 ]
-console.log("2. setB.membership(setC) => ", setB.membership(setC)); // [ 2 ]
+console.log("1. API.Membership(setA, setB) => ", API.membership(setA, setB)); // true
+console.log("2. setB.membership(setC) => ", setB.membership(setC)); // false
+console.log("-----------------");
+
+console.log("Compliment:");
+console.log("1. API.Compliment(setA, setB) => ", API.compliment(setA, setB)); // [1,5]
+console.log("2. setB.compliment(setC) => ", setB.compliment(setC)); // [2]
 console.log("-----------------");

@@ -44,6 +44,10 @@ function union(a, b) {
     return _arrayUnique(a.concat(b));
 }
 
+Array.prototype.union = function(b) {
+    return _arrayUnique(this.concat(b));
+}
+
 function _arrayUnique(array) {
     var a = array.concat();
     for(var i = 0; i < a.length; ++i) {
@@ -54,6 +58,14 @@ function _arrayUnique(array) {
     }
 
     return a;
+}
+
+function intersection(a, b) {
+ // implement logic
+}
+
+Array.prototype.intersection = function(b) {
+ // implement logic
 }
 
 module.exports = {

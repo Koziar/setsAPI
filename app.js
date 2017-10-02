@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+// logic API for the sets
+var setTheory = require('./setTheory');
+
 var app = express();
 
 // view engine setup
